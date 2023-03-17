@@ -1,0 +1,23 @@
+{
+  "name": "preentrega3lopez",
+  "version": "1.0.0",
+  "description": "Sitio para conseguir veterinarios , alimentos , comunidad de mascotas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agus1260/PreEntrega3Lopez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/agus1260/PreEntrega3Lopez/issues"
+  },
+  "homepage": "https://github.com/agus1260/PreEntrega3Lopez#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.21"
+  }
+}
