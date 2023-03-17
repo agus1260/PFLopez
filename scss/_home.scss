@@ -1,0 +1,56 @@
+/* -- home -- */
+.home-section {
+    padding: 20px;
+
+    h1 {
+        text-align: center;
+        padding: 50px 20px;
+        font-size:  1.5em;
+        font-weight: bold;
+    }
+}
+
+.home-section-c1 {
+    @include flex(column, center, center);
+    padding: 40px;
+
+    p {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    img {
+        @include box-size(100%, auto);
+        max-width: 700px;
+        margin: 10px auto;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+}
+
+.home-section-c2 {
+    @extend .home-section-c1;
+    @include flex(row, center, center);
+
+    img {
+        max-width: 500px;
+    }
+}
+
+.home-section-c3 {
+   @extend .home-section-c2;
+   flex-direction: row-reverse;
+}
+
+.description-box {
+    @include box-size(50%, 100%);
+    display: inline-block;
+
+    p {
+        @include box-size(100%,100%);
+        padding: 0 20px;
+        text-align: center;
+        font-size: 18px;
+        color: $gray-color;
+    }
+}

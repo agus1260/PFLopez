@@ -1,0 +1,53 @@
+/* -- tienda -- */
+.container-cards{
+    @include flex(row, space-around, flex-start);
+    padding: 20px 20px 70px;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.card-tienda {
+    border: none;
+    border-radius: 15px;
+    box-shadow: $shadow;
+}
+
+.card-tienda-img{
+    max-height: 300px;
+    border-top-left-radius: 15px ;
+    border-top-right-radius: 15px ;
+}
+
+.card-tienda-text{
+    @include box-size(300px, 220px);
+    @include flex(column, space-between, flex-start);
+    background-color: $bg-color-card;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 15px;
+
+    h2, p {
+        color: $text-color-card;
+    }
+}
+
+.card-tienda-subtitle {
+    text-align: center;
+    padding: 20px;
+}
+
+.btn-comprar {
+    background-color: $white-smoke-color;
+    padding: 10px 15px;
+    color: $bg-color-card;
+    font-weight: bold;
+    border: solid 2px $bg-color-card;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bg-color-card;
+        color: $white-smoke-color;
+        border: solid 2px $white-smoke-color;
+    }
+}

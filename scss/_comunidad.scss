@@ -1,0 +1,57 @@
+/* -- comunidad -- */
+.comunidad-section {
+    @include flex(column, center,center);
+    padding: 20px;
+
+    section {
+        margin-bottom: 20px;
+
+        p {
+            text-align: center;
+            color: $gray-color;  
+        }
+
+        img {
+            @include box-size(100%, auto);
+            max-width: 474px;
+            margin: 10px auto;
+            border-radius: 15px;
+        }
+    }
+}
+
+.podcast-box {
+    width: 100%;
+    max-width: 474px;
+    padding: 20px 0;
+}
+
+.formulario-contacto {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 30px;
+
+    h3 {
+        text-align: center;
+        padding: 20px;
+        font-size:  1.5em;
+        font-weight: bold;
+    }
+
+    .form-label {
+        padding: 0 0.375rem;
+    }
+
+    button {
+        background-color: $primary-color;
+        color: $white-smoke-color;
+        border: solid 3px $primary-color;
+        border-radius: 10px;
+        padding: 10px 20px;
+
+        &:hover {
+            background-color: transparent;
+            color: $primary-color;
+        }
+    }
+}

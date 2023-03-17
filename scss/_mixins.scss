@@ -1,0 +1,13 @@
+// Mixin dimensiones
+@mixin box-size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+// Mixin flexbox
+@mixin flex($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

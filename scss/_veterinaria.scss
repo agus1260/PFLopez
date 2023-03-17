@@ -1,0 +1,67 @@
+/* -- veterinaria -- */
+.title {
+    text-align: center;
+    padding: 50px 20px;
+    font-size:  1.5em;
+    font-weight: bold;
+}
+
+.veterinary-section {
+    @include flex(column, flex-start, center);
+    padding: 20px;
+}
+
+.veterinaria-total{
+    display: grid;
+    justify-content: space-around;
+}
+
+.veterinaria {
+    max-width: 620px;
+    padding-bottom: 30px;
+
+    p {
+        color: $gray-color;
+        padding: 10px 10px 0 0;
+    }
+}
+
+.veterinaria-img {
+    @include box-size(620px,400px);
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.veterinaria-text {
+    @include flex(row, space-between, flex-start);
+    padding-top: 20px;
+}
+
+.veterinaria-text div:last-child {
+    @include flex(row, center, center);
+}
+
+.btn-map {
+    background-color: transparent;
+    padding: 10px 15px;
+    color: $primary-color;
+    font-weight: bold;
+    border: solid $primary-color;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:active {
+        background-color:transparent;
+        color:#8d0f22;
+        border: solid 2px #8d0f22
+    }
+}
+
+.dropdown, .dropdown-center, .dropend, .dropstart, .dropup, .dropup-center {
+    margin-bottom: 40px;
+}
+
+.dropdown-item:active {
+    background-color: $primary-color !important;
+}
